@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<h1>HOLI</h1>
+{#accion es para saber a donde se llevara#}
+{#url_for es una funcion que regresa como parametro una ruta#}
+<form action="{{url_for('contacto') }}" method="post">
+	<input type='texto' name='nombre' placeholder='Ingresa un nombre'>
+	<button>Enviar</button>
+</form>
+{% endblock %}
